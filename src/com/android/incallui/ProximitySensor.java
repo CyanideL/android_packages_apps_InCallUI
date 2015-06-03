@@ -42,7 +42,7 @@ import com.google.common.base.Objects;
  * sensor should be enabled and disabled. Most of that state is fed into this class through
  * public methods.
  */
-public class ProximitySensor implements AccelerometerListener.OrientationListener,
+public class ProximitySensor implements AccelerometerListener.ChangeListener,
         InCallStateListener, AudioModeListener, SensorEventListener {
 
     private static final String TAG = ProximitySensor.class.getSimpleName();
