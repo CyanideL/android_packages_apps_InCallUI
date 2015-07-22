@@ -283,7 +283,7 @@ public class ProximitySensor implements AccelerometerListener.ChangeListener,
                     .add("aud", AudioState.audioRouteToString(audioMode))
                     .toString());
 
-            if (mIsPhoneOffhook && !screenOnImmediately) {
+            if ((mIsPhoneOffhook || mHasIncomingCall) && !screenOnImmediately) {
                 Log.d(this, "Turning on proximity sensor");
                 // Phone is in use!  Arrange for the screen to turn off
                 // automatically when the sensor detects a close object.
