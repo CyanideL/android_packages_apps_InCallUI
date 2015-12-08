@@ -107,5 +107,7 @@
     </array>
 
     <!-- Ripple color used over light backgrounds. -->
-    <color name="ripple_light">#40000000</color>
+    <color name="ripple_light">#ff1976D2</color>
+
+    <color name="background_white">@*android:color/material_grey_900</color>
 </resources>
