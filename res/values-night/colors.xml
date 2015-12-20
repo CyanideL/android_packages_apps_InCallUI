@@ -47,7 +47,7 @@
     <!-- Color of dialpad digits -->
     <color name="dialpad_digits_text_color">#ffffff</color>
 
-    <color name="incall_dialpad_background">@*android:color/material_grey_900</color>
+    <color name="incall_dialpad_background">@*android:color/material_grey_850</color>
     <color name="incall_dialpad_background_pressed">#ccaaaaaa</color>
 
     <color name="button_background_color">@color/incall_background_color</color>
@@ -74,7 +74,7 @@
     <color name="glowpad_call_widget_normal_tint">@color/dialtacts_theme_color</color>
     <color name="glowpad_end_call_widget_normal_tint">#ff1744</color>
     <color name="glowpad_incoming_widget_tint">#a3a3a3</color>
-    <color name="glowpad_incoming_widget_background_tint">@*android:color/material_grey_900</color>
+    <color name="glowpad_incoming_widget_background_tint">@*android:color/material_grey_850</color>
 
     <!-- 20% opacity, theme color. -->
     <color name="incall_dialpad_touch_tint">#330288d1</color>
@@ -107,7 +107,7 @@
     </array>
 
     <!-- Ripple color used over light backgrounds. -->
-    <color name="ripple_light">#ff1976D2</color>
+    <color name="ripple_light">#40000000</color>
 
-    <color name="background_white">@*android:color/material_grey_900</color>
+    <color name="background_white">@*android:color/material_grey_850</color>
 </resources>
