@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2012 The Android Open Source Project
+  ~ Copyright (C) 2013 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -12,109 +13,99 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License
--->
+  -->
 
 <resources>
-    <!--  Primary text color in the Dialer -->
-    <color name="dialtacts_primary_text_color">#ffffff</color>
-    <!-- Secondary text color in the Dialer -->
-    <color name="dialtacts_secondary_text_color">#b3ffffff</color>
-    <color name="dialer_red_highlight_color">#ff1744</color>
-    <color name="dialer_green_highlight_color">#00c853</color>
 
-    <!-- Color for the setting text. -->
-    <color name="setting_primary_color">@color/dialtacts_primary_text_color</color>
-    <!-- Color for the setting description text. -->
-    <color name="setting_secondary_color">@color/dialtacts_secondary_text_color</color>
-    <color name="setting_disabled_color">#aaaaaa</color>
-    <color name="setting_background_color">@*android:color/material_grey_900</color>
-    <color name="setting_button_color">#111</color>
+    <!-- In-call UI background color. -->
+    <color name="incall_background_color">#ff000000</color>
+    <color name="incall_accent_color">#ff1976D2</color>
 
-    <!-- 70% black -->
-    <color name="call_log_icon_tint">#b3ffffff</color>
-    <color name="call_log_list_item_primary_action_icon_tint">@color/call_log_icon_tint</color>
-    <!-- Color of the text describing an unconsumed missed call. -->
-    <color name="call_log_missed_call_highlight_color">@color/dialer_red_highlight_color</color>
-    <!-- Color of the text describing an unconsumed voicemail. -->
-    <color name="call_log_voicemail_highlight_color">#33b5e5</color>
+    <!-- Background color of main banner. -->
+    <color name="incall_call_banner_background_color">@color/incall_background_color</color>
+    <color name="incall_call_banner_text_color">#ffffffff</color>
+    <!-- 80% opacity, white -->
+    <color name="incall_call_banner_subtext_color">#ffffffff</color>
+    <color name="incall_banner_secondary_background_color">@*android:color/material_grey_900</color>
+    <color name="incall_banner_secondary_text_color">#ff1976D2</color>
 
-    <!-- Background color of visual voicemail promo card. -->
-    <color name="visual_voicemail_promo_card_background">#673ab7</color>
-    <color name="visual_voicemail_promo_card_divider">#7d57c1</color>
-    <color name="promo_card_text">#ffffff</color>
+    <color name="incall_action_bar_background_color">@color/incall_background_color</color>
+    <color name="incall_action_bar_text_color">@color/incall_call_banner_text_color</color>
 
-    <color name="voicemail_icon_tint">@*android:color/material_grey_900</color>
-    <color name="voicemail_icon_disabled_tint">#80000000</color>
-    <color name="voicemail_playpause_icon_tint">@color/dialer_theme_color</color>
-    <!-- Colour of voicemail progress bar to the right of position indicator. -->
-    <color name="voicemail_playback_seek_bar_yet_to_play">#cecece</color>
-    <!-- Colour of voicemail progress bar to the left of position indicator. -->
-    <color name="voicemail_playback_seek_bar_already_played">@color/dialer_theme_color</color>
+    <!-- Put on top of each photo, implying 80% darker than usual. -->
+    <color name="on_hold_dim_effect">#cc000000</color>
 
-    <!-- Standard color for selected items. -->
-    <color name="item_selected">#660099cc</color>
+    <color name="conference_call_manager_background_color">@*android:color/material_grey_900</color>
+    <color name="conference_call_manager_caller_name_text_color">#ff1976D2</color>
+    <color name="conference_call_manager_icon_color">#ff1976D2</color>
+    <!-- Used with some smaller texts in manage conference screen. -->
+    <color name="conference_call_manager_secondary_text_color">#ffffff</color>
+    <color name="secondary_call_info_divider_highlight_color">#ff1976D2</color>
 
-    <!-- White background for dialer -->
-    <color name="background_dialer_white">@*android:color/material_grey_900</color>
-    <!-- Background color of new dialer activity -->
-    <color name="background_dialer_light">@*android:color/material_grey_900</color>
-    <!-- Background color for search results and call details -->
-    <color name="background_dialer_results">@*android:color/material_grey_900</color>
-    <color name="background_dialer_call_log">@color/background_dialer_light</color>
-    <color name="background_dialer_call_log_list_item">@color/background_dialer_white</color>
+    <color name="end_call_touch_feedback_tint">#dddddd</color>
 
-    <!-- Color of the 1dp divider that separates favorites -->
-    <color name="favorite_contacts_separator_color">#4dffffff</color>
+    <!-- Color of dialpad digits -->
+    <color name="dialpad_digits_text_color">#ffffff</color>
 
-    <color name="searchbox_icon_tint">#a4a4a4</color>
+    <color name="incall_dialpad_background">@*android:color/material_grey_900</color>
+    <color name="incall_dialpad_background_pressed">#ccaaaaaa</color>
 
-    <!-- Color of the contact name in favorite tiles -->
-    <color name="contact_tile_name_color">#ffffff</color>
+    <color name="button_background_color">@color/incall_background_color</color>
+    <color name="button_selected_color">@color/dialer_theme_color_dark</color>
+    <!-- 70% opacity, white. -->
+    <color name="button_default_color">#b3ffffff</color>
+    <!-- 20% opacity, white. -->
+    <color name="button_disabled_color">#33ffffff</color>
 
-    <color name="contact_list_name_text_color">@color/dialtacts_primary_text_color</color>
+    <!-- Background color of action bars -->
+    <color name="actionbar_background_color">#ff000000</color>
+    <!-- Background color for status bar. For portrait this will be ignored. -->
+    <color name="statusbar_background_color">#ff000000</color>
 
-    <!-- Undo dialogue color -->
-    <color name="undo_dialogue_text_color">#b3ffffff</color>
+    <color name="translucent_shadow">#33999999</color>
 
-    <color name="empty_list_text_color">#b3ffffff</color>
+    <!-- 70% opacity, black. -->
+    <color name="glowpad_background_color">#b3000000</color>
+    <!-- 15% opacity, white. -->
+    <color name="glowpad_outer_ring_color">#ff1976D2</color>
+    <color name="glowpad_text_widget_ring_color">#ffffff</color>
+    <color name="glowpad_widget_active_color">#ffffff</color>
+    <color name="glowpad_text_widget_normal_tint">#cccccc</color>
+    <color name="glowpad_call_widget_normal_tint">#ff000000</color>
+    <color name="glowpad_end_call_widget_normal_tint">#ff1744</color>
+    <color name="glowpad_incoming_widget_tint">#a3a3a3</color>
+    <color name="glowpad_incoming_widget_background_tint">@*android:color/material_grey_900</color>
 
-    <color name="remove_text_color">#b3ffffff</color>
+    <!-- 20% opacity, theme color. -->
+    <color name="incall_dialpad_touch_tint">#330288d1</color>
 
-    <!-- Text color for the "Remove" text when a contact is dragged on top of the remove view -->
-    <color name="remove_highlighted_text_color">#FF3F3B</color>
+    <!-- Background colors for InCallUI. This set of colors is a subset of
+        https://spec.googleplex.com/quantumpalette#extended which pass WCAG AA and all have a
+        contrast ratio over 5:1.
 
-    <!-- Color of the bottom border below the contacts grid on the main dialer screen. -->
-    <color name="contacts_grid_bottom_border_color">#16000000</color>
+        These colors are also used by InCallUIMaterialColorMapUtils to generate primary
+        activity colors.
+    -->
+    <array name="background_colors">
+        <item>#00796B</item>
+        <item>#3367D6</item>
+        <item>#303F9F</item>
+        <item>#7B1FA2</item>
+        <item>#C2185B</item>
+        <item>#C53929</item>
+    </array>
 
-    <!-- Color of actions in expanded call log entries.  This text color represents actions such
-         as call back, play voicemail, etc. -->
-    <color name="call_log_action_text">@color/dialer_theme_color</color>
+    <!-- Darker versions of background_colors, two shades darker. These colors are used for the
+         status bar. -->
+    <array name="background_colors_dark">
+        <item>#00695C</item>
+        <item>#2A56C6</item>
+        <item>#283593</item>
+        <item>#6A1B9A</item>
+        <item>#AD1457</item>
+        <item>#B93221</item>
+    </array>
 
-    <!-- Color for missed call icons. -->
-    <color name="missed_call">#ff2e58</color>
-
-    <!-- Color for answered or outgoing call icons. -->
-    <color name="answered_call">@color/dialer_green_highlight_color</color>
-
-    <!-- Color for icons in the actionbar -->
-    <color name="actionbar_icon_color">#ffffff</color>
-
-    <color name="dialer_dialpad_touch_tint">#330288d1</color>
-
-    <color name="floating_action_button_touch_tint">#80ffffff</color>
-
-    <color name="call_log_action_divider">#111111</color>
-
-    <color name="background_color_transparent">#00000000</color>
-    <color name="call_log_primary_background_color">#000000</color>
-    <color name="call_log_secondary_background_color">#333333</color>
-    <color name="call_log_header_color">#ff1976D2</color>
-    <color name="call_log_voicemail_status_background_color">#ff000000</color>
-    <color name="call_log_voicemail_status_text_color">#888888</color>
-    <color name="call_log_voicemail_status_action_text_color">#ff1976D2</color>
-    <color name="call_log_primary_bg_color">@*android:color/material_grey_900</color>
-    <color name="call_log_secondary_bg_color">@*android:color/material_grey_800</color>
-    <color name="call_log_header_color_dark">@*android:color/material_grey_900</color>
-    <color name="dialpad_text_color">#FFFFFF</color>
-    <color name="keyguard_preview_bg">@*android:color/material_grey_800</color>
+    <!-- Ripple color used over light backgrounds. -->
+    <color name="ripple_light">#ff1976D2</color>
 </resources>
